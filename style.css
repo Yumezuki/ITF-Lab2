@@ -78,10 +78,12 @@
 
 .col-span{
     grid-column: span 2 / span 2;
+    background-size: cover;
 }
 
 .row-span{
     grid-row: span 2 / span 2;
+    background-size: cover;
 }
 
 input{
@@ -95,5 +97,9 @@ input{
 }
 
 button{
-    
+    background-color: rgb(209, 209, 209);
+    border-style: none;
+    height: 25px;
+    width: 50px;
+    border-radius: 10px;
 }
