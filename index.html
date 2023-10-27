@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bojji The Rock</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function setUsername(){
+            document.getElementById("username-p").innerHTML = document.getElementById("username").value + "'s Gallery";
+        }
+        function setProfileImage(){
+            document.getElementById("profileImage").style.backgroundImage = "url(" + document.getElementById("profileimg").value + ")";
+        }
+    </script>
+</head>
+<body>
+    <div class = "content" >
+        <div class="avatar">
+            <div class="profile-img" id="profileImage">
+            </div>
+            <div class="noti">99+</div>
+        </div>
+            
+        <div class="username">
+            <a href="https://github.com/Yumezuki" class = "on-hover">
+            <p style="font-size: x-large; font-weight: 600;" id="username-p">Bojji's Gallery</p>
+            </a>
+        </div>
+
+        <div class="input-group">
+            <div>
+                <label style="font-weight: 400;">Set the username</label>
+                <input type="text" id="username">
+                <button style="margin-left: 10px;" id="setUsername" onclick="setUsername()">set</button></div>
+            <div>
+                <label style="font-weight: 400;">Set the profile image URL</label>
+                <input type="text" id="profileimg">
+                <button style="margin-left: 10px;" id="setProfile" onclick="setProfileImage()">set</button>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item col-span" style="background-image: url();"></div>
+            <div class="gallery-item" style="background-image: url();"></div>
+            <div class="gallery-item" style="background-image: url();"></div>
+            <div class="gallery-item" style="background-image: url();"></div>
+            <div class="gallery-item row-span" style="background-image: url();"></div>
+            <div class="gallery-item" style="background-image: url();"></div>
+            <div class="gallery-item" style="background-image: url();"></div>
+            <div class="gallery-item" style="background-image: url();"></div>
+            <div class="gallery-item" style="background-image: url();"></div>
+            <div class="gallery-item" style="background-image: url();"></div>
+        </div>
+    </div>
+
+</body>
+</html>
